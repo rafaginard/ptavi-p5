@@ -84,17 +84,20 @@ Se ha capturado una sesión SIP (archivo sip.cap.gz), que se puede abrir con Wir
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
 
 12. Vamos a ver más a fondo el intercambio RTP. En Telephony hay una opción RTP. Empecemos mirando los flujos RTP.
- ** ¿Cuántos flujos hay? ¿por qué?
- ** ¿Cuántos paquetes se pierden?
+ ** ¿Cuántos flujos hay? ¿por qué? hay 611 de RTP y 196 H.261
+ ** ¿Cuántos paquetes se pierden? Ninguno paquete se pierde
  ** ¿Cuál es el valor máximo del delta? ¿Y qué es lo que significa el valor de delta?
+	Valor maximo de delta es 1290.479.  Delta es la diferencia de tiempo de empaquetado entre el paquete actual y el anterior y max delta es el valor maximo que toma la delta.
  ** ¿Cuáles son los valores de jitter (medio y máximo)? ¿Qué quiere decir eso? ¿Estamos ante una conversación de calidad?
+	Max Jitter =  183.096 y el Valor medio de Jitter = 153.240
+	
 
 
 13. Elige un paquete RTP de audio. Analiza el flujo de audio en Telephony -> RTP -> Stream Analysis.
- ** ¿Cuánto valen el delta y el jitter para el primer paquete que ha llegado?
- ** ¿Podemos saber si éste es el primer paquete que nos han enviado?
- ** Los valores de jitter son menores de 10ms hasta un paquete dado. ¿Cuál?
- ** ¿A qué se debe el cambio tan brusco del jitter?
+ ** ¿Cuánto valen el delta y el jitter para el primer paquete que ha llegado? para el primero vale 0
+ ** ¿Podemos saber si éste es el primer paquete que nos han enviado? Si, por el numero de secuencia
+ ** Los valores de jitter son menores de 10ms hasta un paquete dado. ¿Cuál? hasta el paquete 246
+ ** ¿A qué se debe el cambio tan brusco del jitter? 
  ** ¿Es comparable este cambio con el tiempo desde la recepción del paquete anterior? ¿Por qué?
  ** ¿Cuál es la dependencia entre el tiempo transcurrido desde el paquete anterior y el valor de jitter?
 
