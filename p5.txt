@@ -99,7 +99,8 @@ Se ha capturado una sesión SIP (archivo sip.cap.gz), que se puede abrir con Wir
  ** Los valores de jitter son menores de 10ms hasta un paquete dado. ¿Cuál? hasta el paquete 246
  ** ¿A qué se debe el cambio tan brusco del jitter? Hubo una descarga
  ** ¿Es comparable este cambio con el tiempo desde la recepción del paquete anterior? No es comparable ¿Por qué? Uno es una medio y otro es una medida puntual.
- ** ¿Cuál es la dependencia entre el tiempo transcurrido desde el paquete anterior y el valor de jitter? El delta es el tiempo entre paquetes y el jitter es una media
+ ** ¿Cuál es la dependencia entre el tiempo transcurrido desde el paquete anterior y el valor de jitter? 
+	El delta es el tiempo entre paquetes y el jitter es una media
 
 
 14. En Telephony selecciona el menú VoIP calls. Verás que se lista la llamada de voz IP capturada en una ventana emergente. Selecciona esa llamada y pulsa el botón Graph.
